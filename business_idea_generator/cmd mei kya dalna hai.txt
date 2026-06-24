@@ -1,2 +1,0 @@
-cd C:\business_idea_generator
-python app.py
