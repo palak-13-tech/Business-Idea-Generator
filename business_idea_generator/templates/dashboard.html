@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<section class="hero">
+
+    <nav>
+        <div class="logo">StartupSpark</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/generate">Generate</a>
+            <a href="/dashboard">Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1 style="color:white;text-align:center;margin-bottom:30px;">
+            Startup Dashboard
+        </h1>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2>{{ total_ideas }}</h2>
+                <p>Total Ideas</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>{{ avg_score }}</h2>
+                <p>Average Score</p>
+            </div>
+
+        </div>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Startup</th>
+                <th>Industry</th>
+                <th>Score</th>
+            </tr>
+
+            {% for idea in ideas %}
+
+            <tr>
+                <td>{{ idea[0] }}</td>
+                <td>{{ idea[1] }}</td>
+                <td>{{ idea[2] }}</td>
+                <td>{{ idea[7] }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</section>
+
+</body>
+</html>

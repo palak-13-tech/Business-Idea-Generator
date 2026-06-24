@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Idea</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Startup Idea Result</h1>
+
+    <div class="card">
+
+        <h2>{{ idea.startup_name }}</h2>
+
+        <p><strong>Industry:</strong> {{ idea.industry }}</p>
+
+        <p><strong>Problem:</strong> {{ idea.problem }}</p>
+
+        <p><strong>Solution:</strong> {{ idea.solution }}</p>
+
+        <p><strong>Target Audience:</strong> {{ idea.target_audience }}</p>
+
+        <p><strong>Revenue Model:</strong> {{ idea.revenue_model }}</p>
+
+        <p><strong>Market Validation Score:</strong>
+            {{ idea.market_score }}/100
+        </p>
+
+    </div>
+
+    <a href="/generate" class="btn">
+        Generate Another
+    </a>
+
+</div>
+
+</body>
+</html>

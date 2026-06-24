@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #252524 0%,
+        #764ba2 50%,
+        #ff6b6b 100%
+    );
+    padding:30px 80px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:white;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffe066;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+
+.hero-text{
+    text-align:center;
+    max-width:850px;
+}
+
+.hero-text h1{
+    font-size:4.5rem;
+    color:white;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#ffe066;
+}
+
+.hero-text p{
+    color:white;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    background:white;
+    color:#4f46e5;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.secondary{
+    background:#ffe066;
+    color:#1e293b;
+}
+
+/* FEATURES */
+
+.features{
+    padding:80px 50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    background:#f8fafc;
+}
+
+.feature-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card h2{
+    margin-bottom:15px;
+    color:#4f46e5;
+}
+
+.feature-card p{
+    color:#64748b;
+    text-align:left;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+    padding:80px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.about p{
+    color:#64748b;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* FORMS */
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+select{
+    width:100%;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#667eea;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    max-width:700px;
+    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    color:#4f46e5;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* DASHBOARD */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+    margin-bottom:40px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.stat-card h2{
+    color:#4f46e5;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#64748b;
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+th{
+    background:#4f46e5;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
+
+tr:hover{
+    background:#f1f5f9;
+}
+
+/* PAGE TITLES */
+
+.page-title{
+    color:white;
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
